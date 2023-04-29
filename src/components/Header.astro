@@ -1,0 +1,67 @@
+<header>
+    <div class="center">
+        <h1>
+            Vux
+        </h1>
+        <p>
+            La extensión de HTML para el servidor.
+        </p>
+        <div class="buttons">
+            <a href="/download">Descargar</a>
+            <a href="/docs/es/">Documentación</a>
+        </div>
+    </div>
+</header>
+<style>
+    header {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+
+        width: 100%;
+        min-height: 100vh;
+
+        background: rgb(10, 13, 20);
+    }
+
+    header div.center {
+        width: 100%;
+        max-width: 45rem;
+        text-align: center;
+    }
+    header div.buttons {
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    header a {
+        color: #fff;
+        text-decoration: none;
+        width: 100%;
+        border: 3px solid transparent;
+        padding: 16px;
+        max-width: 300px;
+        border-radius: 9999px;
+        transition: 250ms;
+    }
+    header a:active {
+        transform: scale(0.9);
+    }
+    header a:nth-child(1) {
+        background-color: blueviolet;
+    }
+    header a:nth-child(2) {
+        background-color: rgb(17, 17, 17);
+        border: 3px solid rgb(194, 194, 194);
+    }
+    header a:nth-child(2):hover {
+        border: 3px solid rgb(129, 56, 255);
+    }
+    header h1 {
+        font-size: 60px;
+    }
+    header p {
+        margin-top: 40px;
+    }
+</style>
